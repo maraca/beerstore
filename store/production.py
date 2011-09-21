@@ -1,0 +1,2 @@
+
+from store.settings import *

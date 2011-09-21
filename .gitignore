@@ -1,0 +1,14 @@
+bin/
+eggs/
+develop-eggs/
+parts/
+downloads/
+
+*.db
+*.pyc
+*.DS_Store
+*.swp
+
+._*
+.fuse_hidden*
+.installed.cfg
