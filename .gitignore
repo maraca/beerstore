@@ -3,6 +3,7 @@ eggs/
 develop-eggs/
 parts/
 downloads/
+beerdb
 
 *.db
 *.pyc

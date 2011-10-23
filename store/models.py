@@ -24,7 +24,7 @@ class Product(models.Model):
         abstract = True
 
     def __unicode__(self):
-        return self.slug
+        return self.name
 
 
 class Beverage(Product):
@@ -61,6 +61,8 @@ class BeverageStyle(models.Model):
     beverage_type = models.CharField(max_length=2,
                                      choices=BEVERAGE_TYPES)
 
+    def __unicode__(self):
+        return self.name
 
 class WineStyle(BeverageStyle):
 
