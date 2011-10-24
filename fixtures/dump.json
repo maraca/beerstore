@@ -1,0 +1,90 @@
+[
+  {
+    "pk": 2,
+    "model": "store.beveragestyle",
+    "fields": {
+      "beverage_type": "B",
+      "name": "Ale"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "store.beveragestyle",
+    "fields": {
+      "beverage_type": "B",
+      "name": "Amber"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "store.beveragestyle",
+    "fields": {
+      "beverage_type": "B",
+      "name": "American Ale"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "store.beveragestyle",
+    "fields": {
+      "beverage_type": "B",
+      "name": "Brown Ale"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "store.beveragestyle",
+    "fields": {
+      "beverage_type": "B",
+      "name": "Golden Ale"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "store.beveragestyle",
+    "fields": {
+      "beverage_type": "B",
+      "name": "Lager"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "store.beveragestyle",
+    "fields": {
+      "beverage_type": "B",
+      "name": "Pale Ale"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "store.beveragestyle",
+    "fields": {
+      "beverage_type": "B",
+      "name": "Pilsner"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "store.beveragestyle",
+    "fields": {
+      "beverage_type": "B",
+      "name": "Red Ale"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "store.beveragestyle",
+    "fields": {
+      "beverage_type": "B",
+      "name": "Seasonal"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "store.beveragestyle",
+    "fields": {
+      "beverage_type": "B",
+      "name": "Wheat Beer"
+    }
+  }
+]

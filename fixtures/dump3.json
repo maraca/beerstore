@@ -1,0 +1,174 @@
+[
+  {
+    "pk": 1,
+    "model": "store.beverage",
+    "fields": {
+      "container": "C",
+      "name": "21st Amendment Back In Black ",
+      "regular_price": null,
+      "price": "8.99",
+      "size_value": "6",
+      "size_unit": "P",
+      "disabled": false,
+      "alcohol": "7.6",
+      "abv": "0",
+      "company": 1,
+      "slug": "21st-amendment-back-in-black",
+      "description": "This hoppy, bitter with a slight black malt flavor is an amazingly complex beer that any IPA fan will come to enjoy and appreciate. Try this new year-round craft beer in a can."
+    }
+  },
+  {
+    "pk": 2,
+    "model": "store.beverage",
+    "fields": {
+      "container": "B",
+      "name": "Abbey Leffe Blonde",
+      "regular_price": "9.79",
+      "price": "8.99",
+      "size_value": "6",
+      "size_unit": "P",
+      "disabled": false,
+      "alcohol": null,
+      "abv": null,
+      "company": 2,
+      "slug": "abey-leffe-blonde",
+      "description": "BRONZE MEDAL 2010 WORLD BEER CUP Brewed under license of the Abbey by Hoegaarden, this ale has a sunny color and fruity aroma; full-bodied but not heavy; an excellent example of the style"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "store.beveragestyle",
+    "fields": {
+      "beverage_type": "B",
+      "name": "Ale"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "store.beveragestyle",
+    "fields": {
+      "beverage_type": "B",
+      "name": "Amber"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "store.beveragestyle",
+    "fields": {
+      "beverage_type": "B",
+      "name": "American Ale"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "store.beveragestyle",
+    "fields": {
+      "beverage_type": "B",
+      "name": "Brown Ale"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "store.beveragestyle",
+    "fields": {
+      "beverage_type": "B",
+      "name": "Golden Ale"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "store.beveragestyle",
+    "fields": {
+      "beverage_type": "B",
+      "name": "Lager"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "store.beveragestyle",
+    "fields": {
+      "beverage_type": "B",
+      "name": "Pale Ale"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "store.beveragestyle",
+    "fields": {
+      "beverage_type": "B",
+      "name": "Pilsner"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "store.beveragestyle",
+    "fields": {
+      "beverage_type": "B",
+      "name": "Red Ale"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "store.beveragestyle",
+    "fields": {
+      "beverage_type": "B",
+      "name": "Seasonal"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "store.beveragestyle",
+    "fields": {
+      "beverage_type": "B",
+      "name": "Wheat Beer"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "store.beveragestyle",
+    "fields": {
+      "beverage_type": "B",
+      "name": "Dark Ale"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "store.beveragestyle",
+    "fields": {
+      "beverage_type": "B",
+      "name": "Blonde"
+    }
+  },
+  {
+    "pk": 1,
+    "model": "store.beer",
+    "fields": {
+      "style": 13,
+      "ibu": null
+    }
+  },
+  {
+    "pk": 2,
+    "model": "store.beer",
+    "fields": {
+      "style": 14,
+      "ibu": null
+    }
+  },
+  {
+    "pk": 1,
+    "model": "store.company",
+    "fields": {
+      "beverage_type": "B",
+      "name": "21st Amendment"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "store.company",
+    "fields": {
+      "beverage_type": "B",
+      "name": "Leffe"
+    }
+  }
+]

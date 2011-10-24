@@ -18,6 +18,11 @@ class Product(models.Model):
                             unique=True)
     price = models.DecimalField(max_digits=10,
                                 decimal_places=2)
+    regular_price = models.DecimalField(max_digits=10,
+                                decimal_places=2,
+                                blank=True,
+                                null=True)
+    image = models.ImageField(upload_to='products')
     disabled = models.BooleanField()
 
     class Meta:
@@ -32,6 +37,7 @@ class Beverage(Product):
     
     SIZE_UNIT_TYPES = (
         ('OZ', 'OZ'),
+        ('P', 'Pack'),
     )
 
     CONTAINER_TYPES = (
@@ -40,7 +46,9 @@ class Beverage(Product):
     )
 
     alcohol = models.DecimalField(max_digits=5,
-                                  decimal_places=2)
+                                  decimal_places=2,
+                                  blank=True,
+                                  null=True)
     company = models.ForeignKey('Company')
     # country : TODO
     size_unit = models.CharField(max_length=3, 
@@ -49,7 +57,9 @@ class Beverage(Product):
     container = models.CharField(max_length=2,
                                  choices=CONTAINER_TYPES) # BTL, CAN, Box etc. 
     abv = models.DecimalField(max_digits=4,
-                              decimal_places=2)
+                              decimal_places=2,
+                              blank=True,
+                              null=True)
     
 
 class BeverageStyle(models.Model):
@@ -64,6 +74,7 @@ class BeverageStyle(models.Model):
     def __unicode__(self):
         return self.name
 
+
 class WineStyle(BeverageStyle):
 
     class Meta:
@@ -76,9 +87,9 @@ class BeerStyle(BeverageStyle):
         proxy = True
 
 
-class Beer(Product):
+class Beer(Beverage):
     """Beer Definition."""
-    ibu = models.IntegerField()
+    ibu = models.IntegerField(blank=True, null=True)
     """
     Bitterness shown in International Bittering Units, where:
         - Low bitterness 0 - 20
@@ -88,7 +99,7 @@ class Beer(Product):
     style = models.ForeignKey('BeerStyle')# Ale / IPA / Lager / Cabernet 
 
 
-class Wine(Product):
+class Wine(Beverage):
     """Wine Definition."""
     # region = 
     # vintage =
@@ -101,3 +112,6 @@ class Company(models.Model):
     beverage_type = models.CharField(max_length=2,
                                      choices=BEVERAGE_TYPES)
     name = models.CharField(max_length=255)
+    
+    def __unicode__(self):
+        return self.name

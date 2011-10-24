@@ -1,0 +1,41 @@
+/* Css for beerstore */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #090909;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 10pt;
+    color: #fff;
+}
+a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #f6f6f6;
+}
+#main_container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* top part : Header */
+#header {
+    width: 960px;
+    height: 200px;
+}
+#menu {
+    
+}
+
+#left_search {
+    width: 280px;
+    float: left;
+}
+#middle_container {
+    width: 400px;
+    float: left; 
+}
+#right_container {
+    width: 280px;
+    float: left;
+}

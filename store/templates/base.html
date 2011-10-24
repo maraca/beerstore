@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+		"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+        <title>SF Beer Club </title>
+        <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/site.css" />
+    </head>
+    <body>
+        <div id="main_container">
+            <div id="header">
+                <div id="menu">
+                    Home | About | Cart
+                </div>
+            </div>
+            <div id="left_search">
+                {% block browse %}{% endblock %}
+                <h4>Style</h4>
+                <ul>
+                {% for style in styles %}
+                    <li>{{ style }}</li>
+                {% endfor %}
+                </ul>
+                <h4>Price:</h4>
+            </div>
+            <div id="middle_container">
+                {% block middle %}{% endblock %}
+            </div>
+            <div id="right_container">
+                {% block right %}{% endblock %} right
+            </div>
+        </div>
+    </body>
+</html>

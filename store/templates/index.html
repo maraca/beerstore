@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block middle %}
+{% for beer in beers %}
+<div class="beer_list_item">
+    <p><a href="#">{{ beer.name }}</a></p>
+    <p>{{ beer.description }}</p>
+    <p>{{ beer.size_value }} {{ beer.get_size_unit_display }} - 
+                             {{ beer.get_container_display }}</p>
+</div>
+{% endfor %}
+{% endblock %}
